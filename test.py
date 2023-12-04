@@ -1,0 +1,1 @@
+print(len("Purukichifeat.ChumuNote Totzfeat.千鳥ひな asuzorafeat.Sennzai Myltafeat.凪乃ましろ Purukichi Totz asuzora"))
