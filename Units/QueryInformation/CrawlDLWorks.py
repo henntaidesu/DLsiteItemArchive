@@ -121,7 +121,7 @@ def split_list(input_list, num_parts):
 
 def ThreadCrawDLWorks(processes):
     time = NowTime()
-    sql = "SELECT work_id FROM `works` WHERE  work_state = '1' and updata_time < '2023-11-30 23:32:00'"
+    sql = "SELECT work_id FROM `works` WHERE  work_state in ('1', NULL)  and updata_time < '2024-01-22 00:00:00'"
     WorkList = SelectAll(sql)
     if len(WorkList) == 0:
         print("已完成调用DL SELECT API更新works")

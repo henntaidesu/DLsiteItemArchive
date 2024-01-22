@@ -34,7 +34,6 @@ def RjIdGenerateNew():
         InsertRjNumber(result)
 
 
-
 def RjIdGenerateOLD():
     RJ = "RJ"
     Num = "899550"
