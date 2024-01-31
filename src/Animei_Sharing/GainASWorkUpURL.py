@@ -2,7 +2,7 @@ from ..SQL.SelectDB import SelectWorksIDAndWorksTypeIsSOU
 from ..WebApiCall.AnimeSharing import ASWorkURL
 from ..SQL.ALLSQL import InsertALL, UpdataAll
 from ..log import LogPrint
-from Units.NowTime import NowTime
+from src.NowTime import NowTime
 import multiprocessing
 import sys
 

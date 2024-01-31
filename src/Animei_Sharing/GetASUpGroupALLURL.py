@@ -1,10 +1,10 @@
 import requests
 from lxml import html
 import urllib.parse
-from Units.NowTime import NowTime
+from src.NowTime import NowTime
 import sys
-from Units.SQL.ALLSQL import InsertALL
-from Units.log import LogPrint
+from src.SQL.ALLSQL import InsertALL
+from src.log import LogPrint
 import time
 
 

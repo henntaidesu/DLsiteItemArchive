@@ -4,14 +4,14 @@ import time
 import os
 import requests
 from tqdm import tqdm
-from Units.SQL.ALLSQL import *
-from Units.log import LogPrint
-from Units.NewFolder import NewFolder
+from src.SQL.ALLSQL import *
+from src.log import LogPrint
+from src.NewFolder import NewFolder
 from datetime import datetime
-from Units.NowTime import MiniNowTime, NowTime
-from Units.ReadConf import ReadKatfileCookie, ReadProxy
-from Units.WebApiCall.GETkatfileXFSS import GETXFSS
-from Units.DownNetDrive.AutoUnzip import AutoDowmToUnzip
+from src.NowTime import MiniNowTime, NowTime
+from src.ReadConf import ReadKatfileCookie, ReadProxy
+from src.WebApiCall.GETkatfileXFSS import GETXFSS
+from src.DownNetDrive.AutoUnzip import AutoDowmToUnzip
 
 
 def QuerySpecificWork(WorkId):

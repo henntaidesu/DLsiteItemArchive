@@ -1,4 +1,4 @@
-from Units.SQL.ALLSQL import *
+from src.SQL.ALLSQL import *
 from selenium import webdriver
 
 def OpenASMRWEB():

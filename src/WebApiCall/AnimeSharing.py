@@ -1,7 +1,7 @@
 import requests
 from lxml import html
 import urllib.parse
-from Units.ReadConf import ReadProxy
+from src.ReadConf import ReadProxy
 
 
 def ASWorkURL(Work_id):

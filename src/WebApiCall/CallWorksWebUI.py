@@ -6,7 +6,7 @@ from datetime import datetime
 import sys
 import gc
 import bs4
-from Units.NowTime import NowTime
+from src.NowTime import NowTime
 
 def TrimString(Str):
     if '\n' in Str:

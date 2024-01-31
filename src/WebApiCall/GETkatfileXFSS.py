@@ -1,7 +1,7 @@
 import sys
 
 import requests
-from Units.ReadConf import ReadKatfileUser, WriteKatfileXFSS
+from src.ReadConf import ReadKatfileUser, WriteKatfileXFSS
 
 
 def GETXFSS():

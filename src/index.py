@@ -1,14 +1,14 @@
 import time
 
-from Units.QueryInformation.RjIdGenerate import RjIdGenerateNew
-from Units.QueryInformation.CrawlDLWorks import ThreadCrawDLWorks
-from Units.QueryInformation.CrawlWorkWEBInformation import ThreadCrawWEBInformation
-from Units.Animei_Sharing.GainASWorkUpURL import MultiProcessASUpGroup
-from Units.Animei_Sharing.GainWorkDownURL import MultiProcessASWorkDowmURL
-from Units.DownNetDrive.URLTest import *
-from Units.DownNetDrive.ResolveShortURL import MultiProcessReDownTableShortURL, ReDownTableShortURL
-from Units.DownNetDrive.AutoDown.AutoDownKatfile import Autokatfile, QuerySpecificWork, AutoKatfileDown
-from Units.Animei_Sharing.GetASUpGroupALLURL import GetASUpGroupALLURL
+from src.QueryInformation.RjIdGenerate import RjIdGenerateNew
+from src.QueryInformation.CrawlDLWorks import ThreadCrawDLWorks
+from src.QueryInformation.CrawlWorkWEBInformation import ThreadCrawWEBInformation
+from src.Animei_Sharing.GainASWorkUpURL import MultiProcessASUpGroup
+from src.Animei_Sharing.GainWorkDownURL import MultiProcessASWorkDowmURL
+from src.DownNetDrive.URLTest import *
+from src.DownNetDrive.ResolveShortURL import MultiProcessReDownTableShortURL, ReDownTableShortURL
+from src.DownNetDrive.AutoDown.AutoDownKatfile import Autokatfile, QuerySpecificWork, AutoKatfileDown
+from src.Animei_Sharing.GetASUpGroupALLURL import GetASUpGroupALLURL
 
 
 def Auto(Threads):
@@ -38,9 +38,9 @@ def index():
         print("6:测试Down URL if Ture")
         print("7:转换Short URL")
 
-        flag = input()
+        flag = "2"
         # flag = "b"
-        Threads = 20
+        Threads = 3
         print(F"进程数：{Threads}")
 
         # Threads = int(Threads)
@@ -59,6 +59,9 @@ def index():
 
         if flag == "2":
             ThreadCrawDLWorks(Threads)
+            ThreadCrawWEBInformation(Threads)
+            MultiProcessASUpGroup(Threads)
+            MultiProcessASWorkDowmURL(Threads)
 
         if flag == "3":
             ThreadCrawWEBInformation(Threads)
@@ -97,27 +100,4 @@ def index():
         if flag == "auto":
             Auto(Threads)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        time.sleep(15552000)

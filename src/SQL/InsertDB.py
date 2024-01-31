@@ -1,5 +1,5 @@
 from ..ReadConf import ReadDBConf
-from Units.ReadWorksTxt import ReadWorksTxt
+from src.ReadWorksTxt import ReadWorksTxt
 import sys
 import time
 from datetime import datetime

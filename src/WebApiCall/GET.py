@@ -1,7 +1,7 @@
 import requests
 import time
 import json
-from Units.ReadConf import ReadProxy
+from src.ReadConf import ReadProxy
 
 def CallWorksAPI(term):
     OpenProxy, proxy_url = ReadProxy()

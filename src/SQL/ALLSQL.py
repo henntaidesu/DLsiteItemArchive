@@ -1,5 +1,5 @@
-from Units.ReadConf import ReadDBConf
-from Units.log import LogPrint
+from src.ReadConf import ReadDBConf
+from src.log import LogPrint
 import sys
 import html
 

@@ -1,4 +1,4 @@
-from Units.ReadConf import ReadDBConf
+from src.ReadConf import ReadDBConf
 import sys
 import mysql.connector
 
